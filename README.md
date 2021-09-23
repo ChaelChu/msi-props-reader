@@ -1,26 +1,22 @@
 # msi-props-reader
 
-The service allows you to read properties from the msi installer.
+The module allows to read properties from the MSI installer. 
+At the moment, the module supports browser environment only.
 
 ## Getting Started
 Install the module with: `npm install msi-props-reader`
 
-```javascript
-var msi_props_reader = require('msi-props-reader');
-msi_props_reader.awesome(); // "awesome"
-```
-
-## Documentation
-_(Coming soon)_
-
 ## Examples
-_(Coming soon)_
+To get properties just use this code:
+```javascript
+import { MsiPropsReader } from 'msi-props-reader';
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
+const reader = new MsiPropsReader();
+await reader.initialize(FILE);
+const props = reader.getProperties();
+console.log(props['ProductCode']);
+```
+There "FILE" is file object provided by \<input\>
 
 ## License
 Copyright (c) 2021 ChaelChu  

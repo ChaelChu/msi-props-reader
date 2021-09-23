@@ -20,11 +20,13 @@
       "url": "https://github.com/ChaelChu/msi-props-reader/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/msiPropsReader",
+  "main": "dist/msiPropsReader.js",
+  "types": "dist/msiPropsReader.d.ts",
   "engines": {
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "test": "jest",
     "build": "tsc",
     "lint": "eslint ./src/**/*.ts ./__test__/**/*.ts"

@@ -1,0 +1,7 @@
+__test__/
+.vscode/
+msi_files/
+src/
+.eslintrc
+jest.config.js
+tsconfig.json
