@@ -1,12 +1,18 @@
 {
   "name": "msi-props-reader",
-  "description": "The service allows you to read properties from the msi installer.",
-  "version": "1.0.0",
+  "description": "The module allows to read properties from the MSI installer.",
+  "version": "1.0.1",
+  "license": "MIT",
   "homepage": "https://github.com/ChaelChu/msi-props-reader",
   "author": {
-    "name": "ChaelChu",
-    "email": "chaelchu@mch.su"
+    "name": "Mikhail Chuveiko",
+    "email": "chaelchu@mch.su",
+    "url": "https://github.com/ChaelChu"
   },
+  "keywords": [
+    "installer",
+    "msi"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ChaelChu/msi-props-reader.git"
@@ -40,6 +46,5 @@
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3"
   },
-  "keywords": [],
   "dependencies": {}
 }
